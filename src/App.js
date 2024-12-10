@@ -6,7 +6,7 @@ function App() {
   const [currentLocation, setCurrentLocation] = useState({});
 
   useEffect(() => {
-    const baseUrl = ' http://api.weatherapi.com/v1/current.json?key=d09180696dff4bb0ad9135044240912&q='
+    const baseUrl = ' https://api.weatherapi.com/v1/current.json?key=d09180696dff4bb0ad9135044240912&q='
 
     navigator.geolocation.getCurrentPosition((postion) => {
       axios.get(baseUrl + postion.coords.latitude + ',' + postion.coords.longitude)
