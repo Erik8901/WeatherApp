@@ -3,12 +3,15 @@
     flex-direction: column;
     margin: 0 auto;
     text-align: center;
-    height: 100vh;
-    background: #627e75;
+    height: fit-content;
+    background: #916981;
+    width: fit-content;
+    padding: 1rem;
+    border-radius: 1rem;
     color: #fff;
     font-size: 40px;
-    margin-top: 3rem;
     gap: 1rem;
+    border: 3px solid #fff;
 }
 
 .weather-icon {
@@ -21,7 +24,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    width: 50%;
+    width: 100%;
     margin: 0 auto;
     padding-top: 4rem;
 }
@@ -34,12 +37,4 @@
 
 .day-of-week {
     margin-top: 1rem;
-}
-
-@media screen and (max-width: 1000px) {
-
-    .weather-details {
-        width: 100%;
-    }
-
 }
